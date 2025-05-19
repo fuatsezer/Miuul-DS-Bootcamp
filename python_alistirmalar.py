@@ -95,7 +95,7 @@ list_ = [2, 13, 18, 93, 22]
 
 def split_odd_even(list_):
     """
-    Splits the given list of integers into odd and even numbers.
+    Split the given list of integers into odd and even numbers.
 
     Args:
         list_ (list): A list of integers.

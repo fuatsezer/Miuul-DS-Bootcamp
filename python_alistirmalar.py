@@ -18,10 +18,10 @@ b = True
 
 c = 23 < 22
 
-list_ = [1, 2, 3, 4,"String",3.2, False]
+list_ = [1, 2, 3, 4, "String", 3.2, False]
 
 d = {"Name": "Jake",
-     "Age": [27,56],
+     "Age": [27, 56],
      "Adress": "Downtown"}
 
 t = ("Machine Learning", "Data Science")
@@ -38,7 +38,7 @@ text = "The goal is to turn data into information, and information into insight.
 # GÖREV 3: Verilen liste için aşağıdaki görevleri yapınız.
 ###############################################
 
-lst = ["D","A","T","A","S","C","I","E","N","C","E"]
+lst = ["D", "A", "T", "A", "S", "C", "I", "E", "N", "C", "E"]
 
 # Adım 1: Verilen listenin eleman sayısına bakın.
 print(len(lst))
@@ -62,10 +62,10 @@ print(lst.insert(8, "N"))
 # GÖREV 4: Verilen sözlük yapısına aşağıdaki adımları uygulayınız.
 ###############################################
 
-dict = {'Christian': ["America",18],
-        'Daisy':["England",12],
-        'Antonio':["Spain",22],
-        'Dante':["Italy",25]}
+dict = {'Christian': ["America", 18],
+        'Daisy':["England", 12],
+        'Antonio':["Spain", 22],
+        'Dante':["Italy", 25]}
 
 
 # Adım 1: Key değerlerine erişiniz.
@@ -124,9 +124,9 @@ for i, isim in enumerate(ogrenciler[-3:], start=1):
 # GÖREV 7: Aşağıda 3 adet liste verilmiştir. Listelerde sırası ile bir dersin kodu, kredisi ve kontenjan bilgileri yer almaktadır. Zip kullanarak ders bilgilerini bastırınız.
 ###############################################
 
-ders_kodu = ["CMP1005","PSY1001","HUK1005","SEN2204"]
-kredi = [3,4,2,4]
-kontenjan = [30,75,150,25]
+ders_kodu = ["CMP1005", "PSY1001", "HUK1005", "SEN2204"]
+kredi = [3, 4, 2, 4]
+kontenjan = [30, 75, 150, 25]
 
 print("Ders Bilgileri:")
 for kod, kr, kont in zip(ders_kodu, kredi, kontenjan):
@@ -161,10 +161,6 @@ def kume_karsilastir(kume1, kume2):
         print(kume1.intersection(kume2))
     else:
         print(kume2.difference(kume1))
-
-# Örnek kullanım
-kume1 = set(["data", "python"])
-kume2 = set(["data", "function", "qcut", "lambda", "python", "miuul"])
 
 kume_karsilastir(kume1, kume2)
 

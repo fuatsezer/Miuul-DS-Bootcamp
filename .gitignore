@@ -1,0 +1,30 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoint
+.ipynb_checkpoints/
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# IDE ayarları (PyCharm, VS Code vs.)
+.idea/
+.vscode/
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Loglar ve geçici dosyalar
+*.log
+*.tmp
+
+# pytest cache
+.pytest_cache/
+
+# flake8, mypy gibi araçların geçici dosyaları
+.mypy_cache/

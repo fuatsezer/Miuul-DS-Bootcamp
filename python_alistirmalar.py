@@ -1,3 +1,4 @@
+"""Contains various Python data structure and logic exercises for practice."""
 ###############################################
 # Python Alıştırmalar
 ###############################################

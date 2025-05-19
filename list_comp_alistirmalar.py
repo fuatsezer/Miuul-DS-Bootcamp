@@ -1,4 +1,4 @@
-
+"""This module contains list comprehension exercises for the car_crashes dataset."""
 ##################################################
 # List Comprehensions
 ##################################################

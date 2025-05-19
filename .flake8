@@ -1,3 +1,4 @@
 [flake8]
 max-line-length = 120
+docstring-convention = pep257
 exclude = .git,__pycache__,.venv, ./test_list_comp_alistirmalar.py, ./test_python_alistirmalar.py

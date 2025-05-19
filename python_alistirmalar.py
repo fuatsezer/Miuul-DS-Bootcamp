@@ -95,16 +95,16 @@ list_ = [2, 13, 18, 93, 22]
 
 def split_odd_even(list_):
     """
-        Splits the given list of integers into odd and even numbers.
+    Splits the given list of integers into odd and even numbers.
 
-        Args:
-            list_ (list): A list of integers.
+    Args:
+        list_ (list): A list of integers.
 
-        Returns:
-            tuple: A tuple containing two lists:
-                   - The first list contains all odd numbers.
-                   - The second list contains all even numbers.
-        """
+    Returns:
+        tuple: A tuple containing two lists:
+               - The first list contains all odd numbers.
+               - The second list contains all even numbers.
+    """
     odd_numbers = [x for x in list_ if x % 2 != 0]
     even_numbers = [x for x in list_ if x % 2 == 0]
     return odd_numbers, even_numbers

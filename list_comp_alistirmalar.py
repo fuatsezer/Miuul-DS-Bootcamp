@@ -29,7 +29,6 @@ import pandas as pd
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 500)
-pd.set_option('display.width', 500)
 
 df = sns.load_dataset("car_crashes")
 df.columns

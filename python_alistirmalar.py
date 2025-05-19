@@ -26,10 +26,11 @@ d = {"Name": "Jake",
 
 t = ("Machine Learning", "Data Science")
 
-s = {"Python", "Machine Learning", "Data Science","Python"}
+s = {"Python", "Machine Learning", "Data Science", "Python"}
 
 ###############################################
-# GÖREV 2: Verilen string ifadenin tüm harflerini büyük harfe çeviriniz. Virgül ve nokta yerine space koyunuz, kelime kelime ayırınız.
+# GÖREV 2: Verilen string ifadenin tüm harflerini büyük harfe çeviriniz. Virgül ve
+# nokta yerine space koyunuz, kelime kelime ayırınız.
 ###############################################
 
 text = "The goal is to turn data into information, and information into insight."
@@ -63,9 +64,9 @@ print(lst.insert(8, "N"))
 ###############################################
 
 dict = {'Christian': ["America", 18],
-        'Daisy':["England", 12],
-        'Antonio':["Spain", 22],
-        'Dante':["Italy", 25]}
+        'Daisy': ["England", 12],
+        'Antonio': ["Spain", 22],
+        'Dante': ["Italy", 25]}
 
 
 # Adım 1: Key değerlerine erişiniz.
@@ -78,16 +79,17 @@ print(dict.values())
 dict["Daisy"][1] = 13
 
 # Adım 4: Key değeri Ahmet value değeri [Turkey,24] olan yeni bir değer ekleyiniz.
-dict["Ahmet"] = ["Turkey",24]
+dict["Ahmet"] = ["Turkey", 24]
 
 # Adım 5: Antonio'yu dictionary'den siliniz.
 dict.pop("Antonio", None)
 
 ###############################################
-# GÖREV 5: Arguman olarak bir liste alan, listenin içerisindeki tek ve çift sayıları ayrı listelere atıyan ve bu listeleri return eden fonskiyon yazınız.
+# GÖREV 5: Arguman olarak bir liste alan, listenin içerisindeki tek ve çift sayıları ayrı
+# listelere atıyan ve bu listeleri return eden fonskiyon yazınız.
 ###############################################
 
-list_ = [2,13,18,93,22]
+list_ = [2, 13, 18, 93, 22]
 
 def split_odd_even(list_):
     """
@@ -105,15 +107,17 @@ def split_odd_even(list_):
     even_numbers = [x for x in list_ if x % 2 == 0]
     return odd_numbers, even_numbers
 
+
 odd_numbers, even_numbers = split_odd_even(list_)
 
 ###############################################
 # GÖREV 6: Aşağıda verilen listede mühendislik ve tıp fakülterinde dereceye giren öğrencilerin isimleri bulunmaktadır.
-# Sırasıyla ilk üç öğrenci mühendislik fakültesinin başarı sırasını temsil ederken son üç öğrenci de tıp fakültesi öğrenci sırasına aittir.
+# Sırasıyla ilk üç öğrenci mühendislik fakültesinin başarı sırasını temsil ederken son üç öğrenci de tıp
+# fakültesi öğrenci sırasına aittir.
 # Enumarate kullanarak öğrenci derecelerini fakülte özelinde yazdırınız.
 ###############################################
 
-ogrenciler = ["Ali","Veli","Ayşe","Talat","Zeynep","Ece"]
+ogrenciler = ["Ali", "Veli", "Ayşe", "Talat", "Zeynep", "Ece"]
 
 for i, isim in enumerate(ogrenciler[:3], start=1):
     print(f"Mühendislik Fakültesi {i}. öğrenci: {isim}")
@@ -121,7 +125,8 @@ for i, isim in enumerate(ogrenciler[:3], start=1):
 for i, isim in enumerate(ogrenciler[-3:], start=1):
     print(f"Tıp Fakültesi {i}. öğrenci: {isim}")
 ###############################################
-# GÖREV 7: Aşağıda 3 adet liste verilmiştir. Listelerde sırası ile bir dersin kodu, kredisi ve kontenjan bilgileri yer almaktadır. Zip kullanarak ders bilgilerini bastırınız.
+# GÖREV 7: Aşağıda 3 adet liste verilmiştir. Listelerde sırası ile bir dersin kodu, kredisi ve
+# kontenjan bilgileri yer almaktadır. Zip kullanarak ders bilgilerini bastırınız.
 ###############################################
 
 ders_kodu = ["CMP1005", "PSY1001", "HUK1005", "SEN2204"]
@@ -134,11 +139,13 @@ for kod, kr, kont in zip(ders_kodu, kredi, kontenjan):
 
 ###############################################
 # GÖREV 8: Aşağıda 2 adet set verilmiştir.
-# Sizden istenilen eğer 1. küme 2. kümeyi kapsiyor ise ortak elemanlarını eğer kapsamıyor ise 2. kümenin 1. kümeden farkını yazdıracak fonksiyonu tanımlamanız beklenmektedir.
+# Sizden istenilen eğer 1. küme 2. kümeyi kapsiyor ise ortak elemanlarını eğer kapsamıyor ise 2.
+# kümenin 1. kümeden farkını yazdıracak fonksiyonu tanımlamanız beklenmektedir.
 ###############################################
 
 kume1 = set(["data", "python"])
 kume2 = set(["data", "function", "qcut", "lambda", "python", "miuul"])
+
 
 def kume_karsilastir(kume1, kume2):
     """
@@ -162,9 +169,5 @@ def kume_karsilastir(kume1, kume2):
     else:
         print(kume2.difference(kume1))
 
+
 kume_karsilastir(kume1, kume2)
-
-
-
-
-

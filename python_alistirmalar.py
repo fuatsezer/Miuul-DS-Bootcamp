@@ -8,48 +8,31 @@
 
 x = 8
 
-
 y = 3.2
-
 
 z = 8j + 18
 
-
 a = "Hello World"
-
 
 b = True
 
-
 c = 23 < 22
 
-
-
-l = [1, 2, 3, 4,"String",3.2, False]
-
-
+list_ = [1, 2, 3, 4,"String",3.2, False]
 
 d = {"Name": "Jake",
      "Age": [27,56],
      "Adress": "Downtown"}
 
-
 t = ("Machine Learning", "Data Science")
 
-
-
 s = {"Python", "Machine Learning", "Data Science","Python"}
-
-
-
 
 ###############################################
 # GÖREV 2: Verilen string ifadenin tüm harflerini büyük harfe çeviriniz. Virgül ve nokta yerine space koyunuz, kelime kelime ayırınız.
 ###############################################
 
 text = "The goal is to turn data into information, and information into insight."
-
-
 
 ###############################################
 # GÖREV 3: Verilen liste için aşağıdaki görevleri yapınız.
@@ -72,7 +55,6 @@ print(lst.pop(8))
 # Adım 5: Yeni bir eleman ekleyin.
 print(lst.append("A"))
 
-
 # Adım 6: Sekizinci index'e  "N" elemanını tekrar ekleyin.
 print(lst.insert(8, "N"))
 
@@ -92,25 +74,20 @@ print(dict.keys())
 # Adım 2: Value'lara erişiniz.
 print(dict.values())
 
-
 # Adım 3: Daisy key'ine ait 12 değerini 13 olarak güncelleyiniz.
 dict["Daisy"][1] = 13
-
 
 # Adım 4: Key değeri Ahmet value değeri [Turkey,24] olan yeni bir değer ekleyiniz.
 dict["Ahmet"] = ["Turkey",24]
 
-
 # Adım 5: Antonio'yu dictionary'den siliniz.
 dict.pop("Antonio", None)
-
-
 
 ###############################################
 # GÖREV 5: Arguman olarak bir liste alan, listenin içerisindeki tek ve çift sayıları ayrı listelere atıyan ve bu listeleri return eden fonskiyon yazınız.
 ###############################################
 
-l = [2,13,18,93,22]
+list_ = [2,13,18,93,22]
 
 def split_odd_even(list_):
     """
@@ -128,8 +105,7 @@ def split_odd_even(list_):
     even_numbers = [x for x in list_ if x % 2 == 0]
     return odd_numbers, even_numbers
 
-odd_numbers, even_numbers = split_odd_even(l)
-
+odd_numbers, even_numbers = split_odd_even(list_)
 
 ###############################################
 # GÖREV 6: Aşağıda verilen listede mühendislik ve tıp fakülterinde dereceye giren öğrencilerin isimleri bulunmaktadır.
@@ -138,7 +114,6 @@ odd_numbers, even_numbers = split_odd_even(l)
 ###############################################
 
 ogrenciler = ["Ali","Veli","Ayşe","Talat","Zeynep","Ece"]
-
 
 for i, isim in enumerate(ogrenciler[:3], start=1):
     print(f"Mühendislik Fakültesi {i}. öğrenci: {isim}")

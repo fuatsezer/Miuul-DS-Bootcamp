@@ -4,7 +4,8 @@
 ##################################################
 
 # ###############################################
-# # GÖREV 1: List Comprehension yapısı kullanarak car_crashes verisindeki numeric değişkenlerin isimlerini büyük harfe çeviriniz ve başına NUM ekleyiniz.
+# # GÖREV 1: List Comprehension yapısı kullanarak car_crashes verisindeki numeric
+# değişkenlerin isimlerini büyük harfe çeviriniz ve başına NUM ekleyiniz.
 # ###############################################
 #
 # # Beklenen Çıktı
@@ -37,7 +38,8 @@ new_columns = ["NUM_" + col.upper() if df[col].dtype != "O" else col.upper() for
 # df.columns = new_columns
 print(new_columns)
 # ###############################################
-# # GÖREV 2: List Comprehension yapısı kullanarak car_crashes verisindeki isminde "no" barındırmayan değişkenlerin isimlerininin sonuna "FLAG" yazınız.
+# # GÖREV 2: List Comprehension yapısı kullanarak car_crashes verisindeki isminde "no"
+# barındırmayan değişkenlerin isimlerininin sonuna "FLAG" yazınız.
 # ###############################################
 #
 # # Notlar:
@@ -58,7 +60,8 @@ new_columns = [col.upper() + "_FLAG" if "no" not in col.lower() else col.upper()
 print(new_columns)
 
 # ###############################################
-# # Görev 3: List Comprehension yapısı kullanarak aşağıda verilen değişken isimlerinden FARKLI olan değişkenlerin isimlerini seçiniz ve yeni bir dataframe oluşturunuz.
+# # Görev 3: List Comprehension yapısı kullanarak aşağıda verilen değişken isimlerinden FARKLI olan
+# değişkenlerin isimlerini seçiniz ve yeni bir dataframe oluşturunuz.
 # ###############################################
 
 og_list = ["abbrev", "no_previous"]
@@ -82,10 +85,3 @@ print(new_df.head())
 # # 3 22.400     4.032    5.824          21.056      827.340     142.390
 # # 4 12.000     4.200    3.360          10.920      878.410     165.630
 #
-
-
-
-
-
-
-

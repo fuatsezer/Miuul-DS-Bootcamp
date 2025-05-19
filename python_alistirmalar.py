@@ -91,6 +91,7 @@ dict.pop("Antonio", None)
 
 list_ = [2, 13, 18, 93, 22]
 
+
 def split_odd_even(list_):
     """
         Splits the given list of integers into odd and even numbers.
